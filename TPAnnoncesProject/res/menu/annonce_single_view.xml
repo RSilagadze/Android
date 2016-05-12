@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ece.b3.dwm.tpannoncesproject.AnnonceSingleViewActivity" >
+
+    <item
+        android:id="@+id/mod_annonce"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/mod_annonce"/>
+</menu>

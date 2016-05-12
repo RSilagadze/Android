@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_layout_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnBackBar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="start"
+        android:text="@string/btnBack" 
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/backbutton_selector"
+		/>
+
+    <Button
+        android:id="@+id/btnNextBar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/btnNext" 
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/nextbutton_selector"
+        />
+
+    <Button
+        android:id="@+id/btnRefreshBar"
+        style="?android:attr/buttonStyleSmall"
+        android:animateLayoutChanges="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/refresh" />
+    
+   <Button
+        android:id="@+id/btnDeleteBar"
+        style="?android:attr/buttonStyleSmall"
+        android:animateLayoutChanges="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnRefreshBar"
+        android:background="@drawable/cancelbutton_selector">
+   </Button>
+   
+      <Button
+        android:id="@+id/btnAddBar"
+        style="?android:attr/buttonStyleSmall"
+        android:animateLayoutChanges="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnRefreshBar"
+        android:background="@drawable/addbutton_selector">
+   </Button>
+   
+</RelativeLayout>

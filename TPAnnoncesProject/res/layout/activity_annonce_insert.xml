@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ece.b3.dwm.tpannoncesproject.AnnonceInsertActivity" >
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/validatebutton_selector"
+	/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/resetbutton_selector"
+	 />
+
+    <ImageView
+        android:id="@+id/imgViewIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gdvannonce_cell_image_shape"
+        android:contentDescription="@string/annonce_img_desc"
+        android:src="@drawable/logo_na" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvTitle"
+        android:padding="8dp"
+        android:text="@string/annonce_desc"
+        android:labelFor="@+id/editDesc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnUpload"
+        android:padding="8dp"
+        android:text="@string/annonce_libelle"
+        android:labelFor="@+id/editTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/tvPrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvDesc"
+        android:padding="8dp"
+        android:labelFor="@+id/editPrix"
+        android:text="@string/annonce_prix"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvPrix"
+        android:padding="8dp"
+        android:labelFor="@+id/editIdUser"
+        android:text="@string/user_id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+   <TextView
+       android:id="@+id/tvEuro"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/tvDesc"
+       android:layout_toEndOf="@+id/editPrix"
+       android:labelFor="@+id/editPrix"
+       android:padding="8dp"
+       android:text="@string/euro_sign"
+       android:textAppearance="?android:attr/textAppearanceMedium" />
+  
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgViewIcon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btnDownloaFullSize" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpload"
+        android:layout_toEndOf="@+id/tvTitle"
+        android:ems="10" 
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+   	<EditText
+        android:id="@+id/editDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTitle"
+        android:layout_toEndOf="@+id/tvDesc"
+        android:ems="10" 
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+   <EditText
+       android:id="@+id/editPrix"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/editDesc"
+       android:layout_toEndOf="@+id/tvPrix"
+       android:ems="10"
+       android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+    
+   <EditText
+        android:id="@+id/editIdUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPrix"
+        android:layout_toEndOf="@+id/tvUser"
+        android:ems="10" 
+        android:inputType="number"
+        >
+        <requestFocus />
+    </EditText>
+    
+    
+    
+
+</RelativeLayout>

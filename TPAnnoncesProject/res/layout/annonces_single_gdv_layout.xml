@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <TextView
+        android:id="@+id/tvSingleTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxLines="2"
+        android:lines="1"
+        android:gravity="center"
+        android:background="@drawable/tvtitle_shape"
+        android:textColor="@color/white"
+        android:text="@string/annonce_libelle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSingleViewDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2.5dp"
+        android:layout_below="@+id/btnDownloadImg"
+        android:text="@string/annonce_desc"
+        android:background="@drawable/tv_singleview_shape"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+   <TextView
+        android:id="@+id/tvSingleViewAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:lines="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2.5dp"
+        android:background="@drawable/tv_singleview_shape"
+        android:layout_below="@+id/tvSingleViewDesc"
+        android:text="@string/user_nom"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <TextView
+        android:id="@+id/tvSingleViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2.5dp"
+        android:background="@drawable/tv_singleview_shape"
+        android:layout_below="@+id/tvSingleViewAuthor"
+        android:text="@string/annonce_date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+    <TextView
+        android:id="@+id/tvSingleViewPrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2.5dp"
+        android:background="@drawable/tv_singleview_shape"
+        android:layout_below="@+id/tvSingleViewDate"
+        android:text="@string/annonce_prix"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/tvSingleViewSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2.5dp"
+        android:background="@drawable/tv_singleview_shape"
+        android:layout_below="@+id/tvSingleViewPrix"
+        android:text="@string/user_site"
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+        
+     <TextView
+        android:id="@+id/tvSingleViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="2.5dp"
+        android:background="@drawable/tv_singleview_shape"
+        android:layout_below="@+id/tvSingleViewSite"
+        android:text="@string/user_contact"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+
+    <ImageView
+        android:id="@+id/imgSingleView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSingleTitleView"
+        android:contentDescription="@string/annonce_img_desc"
+        android:background="@drawable/gdvannonce_cell_image_shape"
+        android:src="@drawable/logo_na" />
+
+    <Button
+        android:id="@+id/btnViewFullImg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/imgSingleView"
+        android:text="@string/btnViewFullSize" />
+
+    <Button
+        android:id="@+id/btnDownloadImg"
+        android:layout_width="150dp"
+		android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imgSingleView"
+        android:text="@string/btnDownloaFullSize" />
+
+</RelativeLayout>
